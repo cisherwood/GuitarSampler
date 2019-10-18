@@ -8,6 +8,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static GuitarSampler.NoteFinder;
+
 
 namespace GuitarSampler
 {
@@ -31,7 +33,6 @@ namespace GuitarSampler
             {
                 Console.WriteLine(asio);
             }
-
 
 
             InitializeComponent();
