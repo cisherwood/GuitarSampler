@@ -1,0 +1,3 @@
+﻿https://github.com/naudio/NAudio/blob/master/Docs/AsioRecording.md
+
+https://github.com/naudio/NAudio/blob/master/Docs/RecordWavFileWinFormsWaveIn.md
