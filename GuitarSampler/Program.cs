@@ -20,8 +20,7 @@ namespace GuitarSampler
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new mainForm());
 
-
-
+            
 
         }
     }

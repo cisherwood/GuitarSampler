@@ -10,7 +10,7 @@ namespace GuitarSampler
     {
 
 
-        // Will return the piano key (ex: A#3) 
+        // Will return the piano key (ex: A#3) when given a guitar note
         // Inputs: Guitar string (1 to 6 - 6 is low E string, 5 is A string)
         // Input: Guitar fret ( 0 is open, 1 is first fret)
         public static string GuitarToKeyboardNote(int guitarString, int guitarFret)
@@ -51,4 +51,8 @@ namespace GuitarSampler
 
 
     }
+
+
+
+
 }

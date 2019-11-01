@@ -1,0 +1,5 @@
+﻿
+
+Sample File layout:
+
+NAME_GROUP_NOTE_VELOCITY_Vmin_Vmax_RR
