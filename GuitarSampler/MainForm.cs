@@ -35,7 +35,7 @@ namespace GuitarSampler
         int currentVelocityGroup;
         int currentRoundRobbin;
 
-        int recordingThreshold = -60;
+        int recordingThreshold = -55;
 
         // flag to see if recording has started or not 
         // used for automatic recording and testin DB to threshold
@@ -494,7 +494,7 @@ namespace GuitarSampler
                     }
                     else // Not all velocities have been recorded
                     {
-                        currentVelocityGroup = previousVelocityGroup + 1;
+                        currentVelocityGroup = previousVelocityGroup - 1;
                         currentFret = previousFret;
                         currentGuitarString = previousGuitarString;
                     }
@@ -547,9 +547,13 @@ namespace GuitarSampler
 
         private string GetCurrentFileName()
         {
+            // File name structure
+            // ex: StudioGuitarOpen_6_13_4_1_
+            // GroupName_GuitarString_Fret_VelocityGroup_RoundRobinNumber_Note_velocityMin_VelocityMax
+
             string fileName;
 
-            fileName = groupName + "_" + currentGuitarString + "_" + currentFret + "_" + currentVelocityGroup + "_" + currentRoundRobbin + ".wav";
+            fileName = groupName + "_" + currentGuitarString + "_" + currentFret + "_" + currentVelocityGroup + "_" + currentRoundRobbin + "_" + GuitarToKeyboardNote(currentGuitarString, currentFret) + ".wav";
 
             return fileName;
         }
